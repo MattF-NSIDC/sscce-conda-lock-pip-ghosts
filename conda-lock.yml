@@ -326,18 +326,6 @@ package:
     sha256: 3f0f0fadc6084960ec8cc00a32a03529c562ffea3b527eb73b1653183daad389
   category: main
   optional: false
-- name: setuptools
-  version: 68.1.2
-  manager: conda
-  platform: linux-64
-  dependencies:
-    python: '>=3.7'
-  url: https://conda.anaconda.org/conda-forge/noarch/setuptools-68.1.2-pyhd8ed1ab_0.conda
-  hash:
-    md5: 4fe12573bf499ff85a0a364e00cc5c53
-    sha256: dc5a777597e05ceddefc87d2f96389b7ae0afb097e558307af83a453db3e3887
-  category: main
-  optional: false
 - name: tomlkit
   version: 0.12.1
   manager: conda
@@ -362,18 +350,6 @@ package:
     sha256: 6edd6d5be690be492712cb747b6d62707f0d0c34ef56eefc796d91e5a03187d1
   category: main
   optional: false
-- name: wheel
-  version: 0.41.1
-  manager: conda
-  platform: linux-64
-  dependencies:
-    python: '>=3.7'
-  url: https://conda.anaconda.org/conda-forge/noarch/wheel-0.41.1-pyhd8ed1ab_0.conda
-  hash:
-    md5: 8f467ba2db2b5470d297953d9c1f9c7d
-    sha256: a27e2c2709245386ebffae865650b5d3f383530b809480c3083f7ae258759303
-  category: main
-  optional: false
 - name: markdown-it-py
   version: 3.0.0
   manager: conda
@@ -385,20 +361,6 @@ package:
   hash:
     md5: 93a8e71256479c62074356ef6ebf501b
     sha256: c041b0eaf7a6af3344d5dd452815cdc148d6284fec25a4fa3f4263b3a021e962
-  category: main
-  optional: false
-- name: pip
-  version: 23.2.1
-  manager: conda
-  platform: linux-64
-  dependencies:
-    python: '>=3.7'
-    setuptools: ''
-    wheel: ''
-  url: https://conda.anaconda.org/conda-forge/noarch/pip-23.2.1-pyhd8ed1ab_0.conda
-  hash:
-    md5: e2783aa3f9235225eec92f9081c5b801
-    sha256: 9e401b171856e12f6aa32ae5cc1ae1d3708aa7d705ddf359ee7dd0dffd73c2b5
   category: main
   optional: false
 - name: typing-extensions
@@ -472,116 +434,5 @@ package:
   hash:
     md5: d64fc21704aefeb8095abcc7c15482cb
     sha256: 71f49877ec5ac7d58bd5c1eacb73a2fc8917b93f3f41711c4da5aa89823e50b0
-  category: main
-  optional: false
-- name: click
-  version: 8.1.7
-  manager: pip
-  platform: linux-64
-  dependencies: {}
-  url: https://files.pythonhosted.org/packages/00/2e/d53fa4befbf2cfa713304affc7ca780ce4fc1fd8710527771b58311a3229/click-8.1.7-py3-none-any.whl
-  hash:
-    sha256: ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28
-  category: main
-  optional: false
-- name: mdurl
-  version: 0.1.2
-  manager: pip
-  platform: linux-64
-  dependencies: {}
-  url: https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl
-  hash:
-    sha256: 84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8
-  category: main
-  optional: false
-- name: pygments
-  version: 2.16.1
-  manager: pip
-  platform: linux-64
-  dependencies: {}
-  url: https://files.pythonhosted.org/packages/43/88/29adf0b44ba6ac85045e63734ae0997d3c58d8b1a91c914d240828d0d73d/Pygments-2.16.1-py3-none-any.whl
-  hash:
-    sha256: 13fc09fa63bc8d8671a6d247e1eb303c4b343eaee81d861f3404db2935653692
-  category: main
-  optional: false
-- name: tomlkit
-  version: 0.12.1
-  manager: pip
-  platform: linux-64
-  dependencies: {}
-  url: https://files.pythonhosted.org/packages/a0/6d/808775ed618e51edaa7bbe6759e22e1c7eafe359af6e084700c6d39d3455/tomlkit-0.12.1-py3-none-any.whl
-  hash:
-    sha256: 712cbd236609acc6a3e2e97253dfc52d4c2082982a88f61b640ecf0817eab899
-  category: main
-  optional: false
-- name: typing-extensions
-  version: 4.7.1
-  manager: pip
-  platform: linux-64
-  dependencies: {}
-  url: https://files.pythonhosted.org/packages/ec/6b/63cc3df74987c36fe26157ee12e09e8f9db4de771e0f3404263117e75b95/typing_extensions-4.7.1-py3-none-any.whl
-  hash:
-    sha256: 440d5dd3af93b060174bf433bccd69b0babc3b15b1a8dca43789fd7f61514b36
-  category: main
-  optional: false
-- name: markdown-it-py
-  version: 3.0.0
-  manager: pip
-  platform: linux-64
-  dependencies:
-    mdurl: '>=0.1,<1.0'
-  url: https://files.pythonhosted.org/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl
-  hash:
-    sha256: 355216845c60bd96232cd8d8c40e8f9765cc86f46880e43a8fd22dc1a1a8cab1
-  category: main
-  optional: false
-- name: pydantic
-  version: 1.10.12
-  manager: pip
-  platform: linux-64
-  dependencies:
-    typing-extensions: '>=4.2.0'
-  url: https://files.pythonhosted.org/packages/b8/ae/8c3ffe3dafeaeb0fa08d6622e7fb074c7f42921fe8916c8de6f47662f9a4/pydantic-1.10.12-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-  hash:
-    sha256: 69328e15cfda2c392da4e713443c7dbffa1505bc9d566e71e55abe14c97ddc62
-  category: main
-  optional: false
-- name: rich
-  version: 13.5.2
-  manager: pip
-  platform: linux-64
-  dependencies:
-    pygments: '>=2.13.0,<3.0.0'
-    markdown-it-py: '>=2.2.0'
-  url: https://files.pythonhosted.org/packages/8d/5f/21a93b2ec205f4b79853ff6e838e3c99064d5dbe85ec6b05967506f14af0/rich-13.5.2-py3-none-any.whl
-  hash:
-    sha256: 146a90b3b6b47cac4a73c12866a499e9817426423f57c5a66949c086191a8808
-  category: main
-  optional: false
-- name: rich-click
-  version: 1.6.1
-  manager: pip
-  platform: linux-64
-  dependencies:
-    click: '>=7'
-    rich: '>=10.7.0'
-  url: https://files.pythonhosted.org/packages/f4/f2/3fbb0e6eee13a484dc8aaca450e9322d267fc3839b6769841492f1594037/rich_click-1.6.1-py3-none-any.whl
-  hash:
-    sha256: 0fcf4d1a09029d79322dd814ab0b2e66ac183633037561881d45abae8a161d95
-  category: main
-  optional: false
-- name: bump-my-version
-  version: 0.9.0
-  manager: pip
-  platform: linux-64
-  dependencies:
-    click: '*'
-    pydantic: <2.0.0
-    rich-click: '*'
-    rich: '*'
-    tomlkit: '*'
-  url: https://files.pythonhosted.org/packages/26/82/2d33702002c866044167a506baa4ac95961660bfa26661a50c8c470b8952/bump_my_version-0.9.0-py3-none-any.whl
-  hash:
-    sha256: 8fdfdcd41f775b7d47aa6881e8a9321957ea4c8ecafe43e4f6adef6e5ffa4d42
   category: main
   optional: false
