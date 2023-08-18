@@ -13,7 +13,7 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: 4bc4f3b8b3edcd2fc0058eaee6f7337917b1e05c945a94cd0d53548c24402317
+    linux-64: d7e970e586ff6c9037feb76938e0f886e4d625af03dfa498ed4e12e501e55fce
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -53,6 +53,17 @@ package:
   hash:
     md5: 7aca3059a1729aa76c597603f10b0dd3
     sha256: f6cc89d887555912d6c61b295d398cff9ec982a3417d38025c45d5dd9b9e79cd
+  category: main
+  optional: false
+- name: python_abi
+  version: '3.11'
+  manager: conda
+  platform: linux-64
+  dependencies: {}
+  url: https://conda.anaconda.org/conda-forge/linux-64/python_abi-3.11-3_cp311.conda
+  hash:
+    md5: c2e2630ddb68cf52eec74dc7dfab20b5
+    sha256: 2966a87dcb0b11fad28f9fe8216bfa4071115776b47ffc7547492fed176e1a1f
   category: main
   optional: false
 - name: tzdata
@@ -278,6 +289,43 @@ package:
     sha256: 04422f10d5bcb251fd254d6a9b0659dcde55e900d48cca159cb1fef637b0050c
   category: main
   optional: false
+- name: click
+  version: 8.1.7
+  manager: conda
+  platform: linux-64
+  dependencies:
+    __unix: ''
+    python: '>=3.8'
+  url: https://conda.anaconda.org/conda-forge/noarch/click-8.1.7-unix_pyh707e725_0.conda
+  hash:
+    md5: f3ad426304898027fc619827ff428eca
+    sha256: f0016cbab6ac4138a429e28dbcb904a90305b34b3fe41a9b89d697c90401caec
+  category: main
+  optional: false
+- name: mdurl
+  version: 0.1.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: '>=3.6'
+  url: https://conda.anaconda.org/conda-forge/noarch/mdurl-0.1.0-pyhd8ed1ab_0.tar.bz2
+  hash:
+    md5: f8dab71fdc13b1bf29a01248b156d268
+    sha256: c678b9194e025b1fb665bec30ee20aab93399203583875b1dcc0a3b52a8f5523
+  category: main
+  optional: false
+- name: pygments
+  version: 2.16.1
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: '>=3.7'
+  url: https://conda.anaconda.org/conda-forge/noarch/pygments-2.16.1-pyhd8ed1ab_0.conda
+  hash:
+    md5: 40e5cb18165466773619e5c963f00a7b
+    sha256: 3f0f0fadc6084960ec8cc00a32a03529c562ffea3b527eb73b1653183daad389
+  category: main
+  optional: false
 - name: setuptools
   version: 68.1.2
   manager: conda
@@ -288,6 +336,30 @@ package:
   hash:
     md5: 4fe12573bf499ff85a0a364e00cc5c53
     sha256: dc5a777597e05ceddefc87d2f96389b7ae0afb097e558307af83a453db3e3887
+  category: main
+  optional: false
+- name: tomlkit
+  version: 0.12.1
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: '>=3.7'
+  url: https://conda.anaconda.org/conda-forge/noarch/tomlkit-0.12.1-pyha770c72_0.conda
+  hash:
+    md5: 62f5b331c53d73e2f6c4c130b53518a0
+    sha256: dc4abf58ca42f29e12b8c0f8aadedfca49cc1e97dab025d15cf000b1787df773
+  category: main
+  optional: false
+- name: typing_extensions
+  version: 4.7.1
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: '>=3.7'
+  url: https://conda.anaconda.org/conda-forge/noarch/typing_extensions-4.7.1-pyha770c72_0.conda
+  hash:
+    md5: c39d6a09fe819de4951c2642629d9115
+    sha256: 6edd6d5be690be492712cb747b6d62707f0d0c34ef56eefc796d91e5a03187d1
   category: main
   optional: false
 - name: wheel
@@ -302,6 +374,19 @@ package:
     sha256: a27e2c2709245386ebffae865650b5d3f383530b809480c3083f7ae258759303
   category: main
   optional: false
+- name: markdown-it-py
+  version: 3.0.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    mdurl: '>=0.1,<1'
+    python: '>=3.8'
+  url: https://conda.anaconda.org/conda-forge/noarch/markdown-it-py-3.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: 93a8e71256479c62074356ef6ebf501b
+    sha256: c041b0eaf7a6af3344d5dd452815cdc148d6284fec25a4fa3f4263b3a021e962
+  category: main
+  optional: false
 - name: pip
   version: 23.2.1
   manager: conda
@@ -314,6 +399,79 @@ package:
   hash:
     md5: e2783aa3f9235225eec92f9081c5b801
     sha256: 9e401b171856e12f6aa32ae5cc1ae1d3708aa7d705ddf359ee7dd0dffd73c2b5
+  category: main
+  optional: false
+- name: typing-extensions
+  version: 4.7.1
+  manager: conda
+  platform: linux-64
+  dependencies:
+    typing_extensions: 4.7.1
+  url: https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.7.1-hd8ed1ab_0.conda
+  hash:
+    md5: f96688577f1faa58096d06a45136afa2
+    sha256: d5d19b8f5b275240c19616a46d67ec57250b3720ba88200da8c732c3fcbfc21d
+  category: main
+  optional: false
+- name: pydantic
+  version: 1.10.12
+  manager: conda
+  platform: linux-64
+  dependencies:
+    libgcc-ng: '>=12'
+    python: '>=3.11,<3.12.0a0'
+    python_abi: 3.11.*
+    typing-extensions: '>=4.2.0'
+  url: https://conda.anaconda.org/conda-forge/linux-64/pydantic-1.10.12-py311h459d7ec_1.conda
+  hash:
+    md5: 301a0653cbd495afa7e6212c0c556d67
+    sha256: 59c8de1a8db2214441300d0b6fd3d39ad28bc6d11a0a268c850d59931e8f0985
+  category: main
+  optional: false
+- name: rich
+  version: 13.5.1
+  manager: conda
+  platform: linux-64
+  dependencies:
+    markdown-it-py: '>=2.2.0'
+    pygments: '>=2.13.0,<3.0.0'
+    python: '>=3.7.0'
+    typing_extensions: '>=4.0.0,<5.0.0'
+  url: https://conda.anaconda.org/conda-forge/noarch/rich-13.5.1-pyhd8ed1ab_0.conda
+  hash:
+    md5: 38e7446efa3c8b8a770a0fff862935c0
+    sha256: 40ecca2e0a173258bd925f8f5d620845e3f56a0adce9e469cbcaed3cdfa605ec
+  category: main
+  optional: false
+- name: rich-click
+  version: 1.6.1
+  manager: conda
+  platform: linux-64
+  dependencies:
+    click: '>=7,<9'
+    python: '>=3.7'
+    rich: '>=10'
+  url: https://conda.anaconda.org/conda-forge/noarch/rich-click-1.6.1-pyhd8ed1ab_0.conda
+  hash:
+    md5: 59a168d82c582248859d8dc8075da6f6
+    sha256: ed8ade65e48279dc9caff53230391d8f72bea6d55f6951fbf7fcc39d762e1e5e
+  category: main
+  optional: false
+- name: bump-my-version
+  version: 0.9.2
+  manager: conda
+  platform: linux-64
+  dependencies:
+    click: ''
+    pydantic: <2.0.0
+    python: '>=3.7'
+    rich: ''
+    rich-click: ''
+    tomlkit: ''
+  url: https://conda.anaconda.org/conda-forge/noarch/bump-my-version-0.9.2-pyhd8ed1ab_0.conda
+  hash:
+    md5: d64fc21704aefeb8095abcc7c15482cb
+    sha256: 71f49877ec5ac7d58bd5c1eacb73a2fc8917b93f3f41711c4da5aa89823e50b0
   category: main
   optional: false
 - name: click

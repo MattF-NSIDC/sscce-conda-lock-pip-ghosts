@@ -5,6 +5,4 @@ channels:
 platforms:
   - "linux-64"
 dependencies:
-  - "pip"
-  - pip:
-    - "bump-my-version ==0.9.0"
+  - "bump-my-version ==0.9.2"
