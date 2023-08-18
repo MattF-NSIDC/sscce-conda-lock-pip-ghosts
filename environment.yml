@@ -1,0 +1,10 @@
+name: "test-pip-persistence"
+channels:
+  - "conda-forge"
+  - "nodefaults"
+platforms:
+  - "linux-64"
+dependencies:
+  - "pip"
+  - pip:
+    - "bump-my-version ==0.9.0"
